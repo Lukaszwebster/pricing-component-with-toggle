@@ -11,7 +11,7 @@
 			@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 		</style>
 	</head>
-	<body class="h-screen">
+	<body class="h-screen flex justify-center">
 		<main class="ml-3 mr-3 font-montserrat">
 			<div class="mt-10 text-center">
 				<h1 class="text-lg text-DarkGrayishBlue">Our Pricing</h1>
@@ -28,8 +28,12 @@
 				<section
 					class="flex flex-col items-center bg-white rounded-lg p-4 shadow-lg md:rounded-none md:rounded-l-lg">
 					<span class="text-xs text-GrayishBlue">Basic</span>
-					<span class="text-5xl mt-2 text-DarkGrayishBlue hidden"> &dollar;19.99</span>
-					<span class="text-5xl mt-2 text-DarkGrayishBlue"> &dollar;199.99</span>
+					<div class="flex items-center gap-1">
+						<span class="text-5xl mt-2 text-DarkGrayishBlue hidden"> $19.99</span>
+						<span class="text-2xl text-DarkGrayishBlue"> $</span>
+						<span class="text-5xl text-DarkGrayishBlue">199.99</span>
+					</div>
+
 					<div class="h-px w-full bg-LightGrayishBlue mt-4"></div>
 					<span class="text-xs text-DarkGrayishBlue mt-4"> 500 GB Storage</span>
 					<div class="h-px w-full bg-LightGrayishBlue mt-4"></div>
@@ -45,9 +49,12 @@
 				<section
 					class="flex flex-col items-center p-4 bg-gradient-to-b from-gradientFrom to-gradientTo mt-4 rounded-lg shadow-lg md:m-0 md:pt-10 md:pb-10">
 					<span class="text-xs text-white"> Professional</span>
-
-					<span class="text-5xl mt-2 text-white hidden"> &dollar;24.99</span>
-					<span class="text-5xl mt-2 text-white"> &dollar;249.99</span>
+					<div class="flex items-center gap-1">
+						<span class="text-2xl text-white hidden">$</span>
+						<span class="hidden">24.99</span>
+						<span class="text-2xl text-white"> $</span
+						><span class="text-5xl text-white">249.99</span>
+					</div>
 					<div class="h-px w-full bg-gradientFrom mt-4"></div>
 					<span class="text-xs text-white mt-4"> 1 TB Storage</span>
 					<div class="h-px w-full bg-gradientFrom mt-4"></div>
@@ -63,8 +70,12 @@
 				<section
 					class="flex flex-col items-center bg-white rounded-lg p-4 mt-4 shadow-lg md:m-0 md:rounded-none md:rounded-r-lg">
 					<span class="text-xs text-GrayishBlue"> Master </span>
-					<span class="text-5xl mt-2 text-DarkGrayishBlue hidden"> &dollar;39.99 </span>
-					<span class="text-5xl mt-2 text-DarkGrayishBlue"> &dollar;399.99</span>
+					<div class="flex items-center gap-1">
+						<span class="text-5xl mt-2 text-DarkGrayishBlue hidden">$</span
+						><span class="text-5xl mt-2 text-DarkGrayishBlue hidden"> 39.99 </span>
+						<span class="text-2xl text-DarkGrayishBlue">$</span
+						><span class="text-5xl text-DarkGrayishBlue">399.99</span>
+					</div>
 					<div class="h-px w-full bg-LightGrayishBlue mt-4"></div>
 					<span class="text-xs text-DarkGrayishBlue mt-4"> 2 TB Storage</span>
 					<div class="h-px w-full bg-LightGrayishBlue mt-4"></div>

@@ -622,6 +622,10 @@ video {
   justify-content: center;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -649,11 +653,6 @@ video {
 .bg-LightGrayishBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(234 14% 74% / var(--tw-bg-opacity));
-}
-
-.bg-VeryLightGrayishBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(240 78% 98% / var(--tw-bg-opacity));
 }
 
 .bg-gradientFrom {
@@ -722,6 +721,21 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .uppercase {

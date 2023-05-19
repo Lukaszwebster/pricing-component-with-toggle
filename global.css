@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	background-color: hsl(240, 78%, 98%);
+	background-image: url("./images/bg-top.svg");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+	body {
+		background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+		background-position: top right, bottom left;
+		background-repeat: no-repeat;
+	}
+}

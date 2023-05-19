@@ -594,6 +594,10 @@ video {
   height: 1px;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -616,10 +620,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .rounded-full {
@@ -646,11 +646,6 @@ video {
   border-color: transparent;
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-LightGrayishBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(234 14% 74% / var(--tw-bg-opacity));
@@ -671,10 +666,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-bgTop {
-  background-image: url('./images/bg-top.svg');
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -691,10 +682,6 @@ video {
 
 .to-gradientTo {
   --tw-gradient-to: hsl(237, 63%, 64%) var(--tw-gradient-to-position);
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .p-4 {
@@ -767,6 +754,21 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+body {
+  background-color: hsl(240, 78%, 98%);
+  background-image: url("./images/bg-top.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+  }
+}
+
 .hover\:border:hover {
   border-width: 1px;
 }
@@ -804,37 +806,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:shadow-inner1:hover {
-  --tw-shadow: inset 1px 1px 0px rgb(0 0 0);;
-  --tw-shadow-colored: inset 1px 1px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-white:hover {
-  --tw-shadow-color: #fff;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:ring-1:hover {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.hover\:ring-inset:hover {
-  --tw-ring-inset: inset;
-}
-
-.hover\:ring-pink-400:hover {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(244 114 182 / var(--tw-ring-opacity));
-}
-
-.hover\:ring-gradientTo:hover {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: hsl(237 63% 64% / var(--tw-ring-opacity));
-}
-
 @media (min-width: 768px) {
   .md\:m-0 {
     margin: 0px;
@@ -868,10 +839,6 @@ video {
   .md\:rounded-r-lg {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-  }
-
-  .md\:bg-right-top {
-    background-position: right top;
   }
 
   .md\:pb-10 {

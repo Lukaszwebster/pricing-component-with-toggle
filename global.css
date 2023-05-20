@@ -15,3 +15,7 @@ body {
 		background-repeat: no-repeat;
 	}
 }
+
+.dot-left {
+	left: 18px;
+}

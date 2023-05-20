@@ -18,20 +18,21 @@
 				<div class="mt-4 flex justify-center md:mt-8">
 					<span class="text-GrayishBlue text-sm">Annually</span>
 					<div
-						class="relative bg-gradient-to-r from-gradientFrom to-gradientTo h-5 w-9 rounded-xl ml-4 mr-4">
-						<div class="w-4 h-4 top-2px left-2px absolute rounded-full bg-white"></div>
+						class="toggle-button cursor-pointer relative bg-gradient-to-r from-gradientFrom to-gradientTo h-5 w-9 rounded-xl ml-4 mr-4">
+						<div
+							class="dot w-4 h-4 top-2px left-2px absolute rounded-full bg-white"></div>
 					</div>
 					<span class="text-GrayishBlue text-sm"> Monthly</span>
 				</div>
 			</div>
 			<div class="mt-10 mb-10 md:flex md:justify-center md:items-center">
 				<section
-					class="flex flex-col items-center bg-white rounded-lg p-4 shadow-lg md:rounded-none md:rounded-l-lg">
+					class="flex flex-col items-center bg-white rounded-lg p-4 shadow-lg md:rounded-none md:rounded-l-lg w-52">
 					<span class="text-xs text-GrayishBlue">Basic</span>
-					<div class="flex items-center gap-1">
-						<span class="text-5xl mt-2 text-DarkGrayishBlue hidden"> $19.99</span>
-						<span class="text-2xl text-DarkGrayishBlue"> $</span>
-						<span class="text-5xl text-DarkGrayishBlue">199.99</span>
+					<div class="flex items-center mt-2 gap-1">
+						<span class="text-2xl text-DarkGrayishBlue">$</span>
+						<span class="monthly text-5xl text-DarkGrayishBlue hidden"> 19.99</span>
+						<span class="annually text-5xl text-DarkGrayishBlue">199.99</span>
 					</div>
 
 					<div class="h-px w-full bg-LightGrayishBlue mt-4"></div>
@@ -47,13 +48,12 @@
 					</button>
 				</section>
 				<section
-					class="flex flex-col items-center p-4 bg-gradient-to-b from-gradientFrom to-gradientTo mt-4 rounded-lg shadow-lg md:m-0 md:pt-10 md:pb-10">
+					class="flex flex-col items-center p-4 bg-gradient-to-b from-gradientFrom to-gradientTo mt-4 rounded-lg shadow-lg md:m-0 md:pt-10 md:pb-10 w-52">
 					<span class="text-xs text-white"> Professional</span>
-					<div class="flex items-center gap-1">
-						<span class="text-2xl text-white hidden">$</span>
-						<span class="hidden">24.99</span>
-						<span class="text-2xl text-white"> $</span
-						><span class="text-5xl text-white">249.99</span>
+					<div class="flex items-center gap-1 mt-2">
+						<span class="text-2xl text-white">$</span>
+						<span class="monthly text-5xl text-white hidden">24.99</span>
+						<span class="annually text-5xl text-white">249.99</span>
 					</div>
 					<div class="h-px w-full bg-gradientFrom mt-4"></div>
 					<span class="text-xs text-white mt-4"> 1 TB Storage</span>
@@ -68,13 +68,13 @@
 					</button>
 				</section>
 				<section
-					class="flex flex-col items-center bg-white rounded-lg p-4 mt-4 shadow-lg md:m-0 md:rounded-none md:rounded-r-lg">
+					class="flex flex-col items-center bg-white rounded-lg p-4 mt-4 shadow-lg md:m-0 md:rounded-none md:rounded-r-lg w-52">
 					<span class="text-xs text-GrayishBlue"> Master </span>
-					<div class="flex items-center gap-1">
-						<span class="text-5xl mt-2 text-DarkGrayishBlue hidden">$</span
-						><span class="text-5xl mt-2 text-DarkGrayishBlue hidden"> 39.99 </span>
-						<span class="text-2xl text-DarkGrayishBlue">$</span
-						><span class="text-5xl text-DarkGrayishBlue">399.99</span>
+					<div class="flex items-center gap-1 mt-2">
+						<span class="text-2xl text-DarkGrayishBlue">$</span>
+						<span class="monthly text-5xl text-DarkGrayishBlue hidden"> 39.99 </span>
+
+						<span class="annually text-5xl text-DarkGrayishBlue">399.99</span>
 					</div>
 					<div class="h-px w-full bg-LightGrayishBlue mt-4"></div>
 					<span class="text-xs text-DarkGrayishBlue mt-4"> 2 TB Storage</span>
@@ -90,5 +90,6 @@
 				</section>
 			</div>
 		</main>
+		<script src="main.js"></script>
 	</body>
 </html>

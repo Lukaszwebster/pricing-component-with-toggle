@@ -21,6 +21,7 @@ module.exports = {
 			spacing: {
 				"1px": "1px",
 				"2px": "2px",
+				"10px": "10px",
 			},
 			boxShadow: {
 				inner1: "inset 1px 1px 0px rgb(0 0 0);",
